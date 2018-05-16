@@ -8,14 +8,14 @@ echo '<title>No_of_WebsiteHits_sofar</title>'
 echo '</head>'
 echo '<body>'
 CLOCK=$(date +%d%b%y"_"%T)
-mysql -h 34.229.201.47 -u admin -padmin@123 -P4011 -Ddocker_db -e "insert into docker_table (REMOTE_ADDR,REQUEST_METHOD) values('${REMOTE_ADDR}','${CLOCK}')"
-mysql -h 34.229.201.47 -u admin -padmin@123 -P4011 -Ddocker_db -e "insert into docker_table (REMOTE_ADDR,REQUEST_METHOD) values('${REMOTE_ADDR}','${CLOCK}')"
-mysql -h 34.229.201.47 -u admin -padmin@123 -P4011 -Ddocker_db -e "insert into docker_table (REMOTE_ADDR,REQUEST_METHOD) values('${REMOTE_ADDR}','${CLOCK}')"
-mysql -h 34.229.201.47 -u admin -padmin@123 -P4011 -Ddocker_db -e "insert into docker_table (REMOTE_ADDR,REQUEST_METHOD) values('${REMOTE_ADDR}','${CLOCK}')"
-HITS=$(mysql -h 34.229.201.47 -u admin -padmin@123 -P4011 -Ddocker_db -e "SELECT COUNT(*) as "No_of_WebsiteHits_sofar" FROM docker_table")
-HITS=$(mysql -h 34.229.201.47 -u admin -padmin@123 -P4011 -Ddocker_db -e "SELECT COUNT(*) as "No_of_WebsiteHits_sofar" FROM docker_table")
-HITS=$(mysql -h 34.229.201.47 -u admin -padmin@123 -P4011 -Ddocker_db -e "SELECT COUNT(*) as "No_of_WebsiteHits_sofar" FROM docker_table")
-HITS=$(mysql -h 34.229.201.47 -u admin -padmin@123 -P4011 -Ddocker_db -e "SELECT COUNT(*) as "No_of_WebsiteHits_sofar" FROM docker_table")
+mysql -h MySQL_db_HOST -u USER -pPASSWORD -Pport -Ddatabase -e "insert into table_name (REMOTE_ADDR,REQUEST_METHOD) values('${REMOTE_ADDR}','${CLOCK}')"
+mysql -h MySQL_db_HOST -u USER -pPASSWORD -Pport -Ddatabase -e "insert into table_name (REMOTE_ADDR,REQUEST_METHOD) values('${REMOTE_ADDR}','${CLOCK}')"
+mysql -h MySQL_db_HOST -u USER -pPASSWORD -Pport -Ddatabase -e "insert into table_name (REMOTE_ADDR,REQUEST_METHOD) values('${REMOTE_ADDR}','${CLOCK}')"
+mysql -h MySQL_db_HOST -u USER -pPASSWORD -Pport -Ddatabase -e "insert into table_name (REMOTE_ADDR,REQUEST_METHOD) values('${REMOTE_ADDR}','${CLOCK}')"
+HITS=$(mysql -h MySQL_db_HOST -u USER -pPASSWORD -Pport -Ddatabase -e "SELECT COUNT(*) as "No_of_WebsiteHits_sofar" FROM table_name")
+HITS=$(mysql -h MySQL_db_HOST -u USER -pPASSWORD -Pport -Ddatabase -e "SELECT COUNT(*) as "No_of_WebsiteHits_sofar" FROM table_name")
+HITS=$(mysql -h MySQL_db_HOST -u USER -pPASSWORD -Pport -Ddatabase -e "SELECT COUNT(*) as "No_of_WebsiteHits_sofar" FROM table_name")
+HITS=$(mysql -h MySQL_db_HOST -u USER -pPASSWORD -Pport -Ddatabase -e "SELECT COUNT(*) as "No_of_WebsiteHits_sofar" FROM table_name")
 echo $HITS
 echo '</body>'
 echo '</html>'
