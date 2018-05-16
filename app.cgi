@@ -16,6 +16,7 @@ HITS=$(mysql -h MySQL_db_HOST -u USER -pPASSWORD -Pport -Ddatabase -e "SELECT CO
 HITS=$(mysql -h MySQL_db_HOST -u USER -pPASSWORD -Pport -Ddatabase -e "SELECT COUNT(*) as "No_of_WebsiteHits_sofar" FROM table_name")
 HITS=$(mysql -h MySQL_db_HOST -u USER -pPASSWORD -Pport -Ddatabase -e "SELECT COUNT(*) as "No_of_WebsiteHits_sofar" FROM table_name")
 HITS=$(mysql -h MySQL_db_HOST -u USER -pPASSWORD -Pport -Ddatabase -e "SELECT COUNT(*) as "No_of_WebsiteHits_sofar" FROM table_name")
+echo "Welcome!"
 echo "No of Website Hits - $HITS"
 echo '</body>'
 echo '</html>'
